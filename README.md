@@ -9,7 +9,9 @@
 #### 安裝 Homebrew
 1. 參考：[官方網站](https://brew.sh/zh-tw/)
 2. 需要在 ~/.zshrc 加入環境變數
-   1. export PATH="/opt/homebrew/bin:$PATH"
+   ```sh
+   export PATH="/opt/homebrew/bin:$PATH"
+   ```
 
 ## Python
 
