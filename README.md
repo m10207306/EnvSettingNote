@@ -57,6 +57,18 @@
     source myenv/bin/activate
     ```
 
+#### 3. 第三方套件問題解決
+- pymssql 
+  - symbol not found in flat namespace '_bcp_batch'
+    ```sh
+    brew install FreeTDS 
+    export LDFLAGS="-L/opt/homebrew/lib -L/opt/homebrew/opt/openssl/lib"
+    export CFLAGS="-I/opt/homebrew/include"
+    export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+    pip uninstall pymssql -y
+    pip install pymssql==2.2.8 --no-binary :all:
+    ```
+
 ## JAVA
 
 ### 需安裝與設定的工具
