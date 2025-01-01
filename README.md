@@ -79,20 +79,19 @@
 ### 每個工具的設定步驟
 
 #### 1. 安裝 JDK
-- 從 [Oracle 官方網站](https://www.oracle.com/java/technologies/javase-downloads.html) 下載並安裝最新版本的 JDK。
+- 從 [Adoptium](https://adoptium.net/) 下載並安裝 17 版 Java
+- OS 選 MacOS, M 系列晶片選 aarch64
 - 安裝完成後，使用以下指令確認安裝是否成功：
     ```sh
     java -version
     ```
 
 #### 2. 安裝 Maven
-- 從 [Maven 官方網站](https://maven.apache.org/download.cgi) 下載並安裝 Maven。
-- 配置環境變量 `MAVEN_HOME` 和 `PATH`。
+- 安裝指令
+  ```sh
+  brew install maven
+  ```
 - 安裝完成後，使用以下指令確認安裝是否成功：
     ```sh
     mvn -version
     ```
-
-#### 3. 安裝 IDE
-- 下載並安裝 [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) 或 [Eclipse](https://www.eclipse.org/downloads/)。
-- 配置 IDE 以使用已安裝的 JDK 和 Maven。
